@@ -1,0 +1,9 @@
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/bin/Debug/netcoreapp2.1/QFetcher.Models.deps.json
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/bin/Debug/netcoreapp2.1/QFetcher.Models.dll
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/bin/Debug/netcoreapp2.1/QFetcher.Models.pdb
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/obj/Debug/netcoreapp2.1/QFetcher.Models.csprojAssemblyReference.cache
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/obj/Debug/netcoreapp2.1/QFetcher.Models.csproj.CoreCompileInputs.cache
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/obj/Debug/netcoreapp2.1/QFetcher.Models.AssemblyInfoInputs.cache
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/obj/Debug/netcoreapp2.1/QFetcher.Models.AssemblyInfo.cs
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/obj/Debug/netcoreapp2.1/QFetcher.Models.dll
+/Users/tal/RiderProjects/QFetcher/QFetcher.Models/obj/Debug/netcoreapp2.1/QFetcher.Models.pdb

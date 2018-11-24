@@ -1,0 +1,144 @@
+2018-11-24 13:53:06.0754||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/tal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2018-11-24 13:53:11.2520|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:4000/api/fetch   
+2018-11-24 13:53:11.2673|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2018-11-24 13:53:11.4130|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 13:53:11.4217|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 6.0224ms 
+2018-11-24 13:53:11.4458|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'NLog.ILogger' while attempting to activate 'QFetcher.Api.Controllers.FetchController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2018-11-24 13:53:11.4848|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 233.1694ms 500 text/html; charset=utf-8 
+2018-11-24 13:56:57.5781||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/tal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2018-11-24 13:57:03.1258|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:4000/api/fetch   
+2018-11-24 13:57:03.1351|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2018-11-24 13:57:03.2674|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 13:57:03.2849|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) - Validation state: Valid 
+2018-11-24 13:57:03.2863||DEBUG|QFetcher.Api.Controllers.FetchController|getting all questions 
+2018-11-24 13:57:07.2867|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3998.6179ms. 
+2018-11-24 13:57:07.3008|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[QFetcher.Models.Question, QFetcher.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2018-11-24 13:57:07.3169|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 4045.8787ms 
+2018-11-24 13:57:07.3213|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4195.7224ms 200 application/json; charset=utf-8 
+2018-11-24 14:06:47.2280||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/tal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2018-11-24 14:07:01.1246|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:4000/api/fetch   
+2018-11-24 14:07:01.1337|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2018-11-24 14:07:01.2616|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 14:07:01.2747|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) - Validation state: Valid 
+2018-11-24 14:07:06.1839|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4905.8424ms. 
+2018-11-24 14:07:06.1920|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[QFetcher.Models.Question, QFetcher.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2018-11-24 14:07:06.2077|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 4942.0923ms 
+2018-11-24 14:07:06.2123|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5087.7273ms 200 application/json; charset=utf-8 
+2018-11-24 14:13:13.1675||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/tal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2018-11-24 14:13:21.3838|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/fetch   
+2018-11-24 14:13:21.4073|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 23.6348ms 307  
+2018-11-24 14:13:21.5753|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/fetch   
+2018-11-24 14:13:21.7180|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 14:13:21.7345|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) - Validation state: Valid 
+2018-11-24 14:13:27.2133|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5476.0931ms. 
+2018-11-24 14:13:27.2218|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[QFetcher.Models.Question, QFetcher.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2018-11-24 14:13:27.2368|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 5515.5554ms 
+2018-11-24 14:13:27.2423|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5667.3782ms 200 application/json; charset=utf-8 
+2018-11-24 14:14:00.0787|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/fetch   
+2018-11-24 14:14:00.0787|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 0.6089ms 307  
+2018-11-24 14:14:00.1224|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/fetch   
+2018-11-24 14:14:00.1239|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 14:14:00.1257|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) - Validation state: Valid 
+2018-11-24 14:14:04.7367|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4609.656ms. 
+2018-11-24 14:14:04.7376|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[QFetcher.Models.Question, QFetcher.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2018-11-24 14:14:04.7437|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 4619.3216ms 
+2018-11-24 14:14:04.7437|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4621.7601ms 200 application/json; charset=utf-8 
+2018-11-24 14:16:14.7727|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/fetch   
+2018-11-24 14:16:14.7752|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 2.454ms 307  
+2018-11-24 14:16:18.4862|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/fetch   
+2018-11-24 14:16:18.4867|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 14:16:18.4924|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) - Validation state: Valid 
+2018-11-24 14:16:22.1341|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3641.2643ms. 
+2018-11-24 14:16:22.1349|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[QFetcher.Models.Question, QFetcher.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2018-11-24 14:16:22.1368|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 3644.3031ms 
+2018-11-24 14:16:22.1368|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3650.9615ms 200 application/json; charset=utf-8 
+2018-11-24 14:16:22.5055|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/favicon.ico   
+2018-11-24 14:16:22.5067|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 1.2478ms 404  
+2018-11-24 14:17:52.0390||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/tal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2018-11-24 14:18:05.3321|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/fetch   
+2018-11-24 14:18:05.3478|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 16.0958ms 307  
+2018-11-24 14:18:05.4890|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/api/fetch   
+2018-11-24 14:18:05.5957|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 14:18:05.6061|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) - Validation state: Valid 
+2018-11-24 14:18:12.0812||ERROR|QFetcher.Services.Readers.IQuestionsReader|Error while trying to read image: https://s3.amazonaws.com/chegg-candidate-task/qsnapshot.png, Message Object reference not set to an instance of an object. 
+2018-11-24 14:18:12.0886||ERROR|QFetcher.Api.Controllers.FetchController|Error while Fetching questions: One or more errors occurred. (Object reference not set to an instance of an object.) 
+2018-11-24 14:18:12.0941|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 6494.9098ms 
+2018-11-24 14:18:12.1241|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.) ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at QFetcher.Services.Readers.ImageQuestionReader.ParseResult(String result) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/Readers/ImageQuestionReader.cs:line 47
+   at QFetcher.Services.Readers.ImageQuestionReader.ReadFromSource(String url) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/Readers/ImageQuestionReader.cs:line 35
+   at QFetcher.Services.QuestionAggregator.<>c__DisplayClass3_0.<GetAll>b__0(String sourceUrl) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/QuestionAggregator.cs:line 32
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass33_0`2.<ForEachWorker>b__0(Int32 i)
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`1.<ForWorker>b__1(RangeWorker& currentWorker, Int32 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`1.<ForWorker>b__1(RangeWorker& currentWorker, Int32 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica`1.ExecuteAction(Boolean& yieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Parallel.ThrowSingleCancellationExceptionOrOtherException(ICollection exceptions, CancellationToken cancelToken, Exception otherException)
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at QFetcher.Services.QuestionAggregator.GetAll(String path) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/QuestionAggregator.cs:line 27
+   at QFetcher.Api.Controllers.FetchController.GetAll() in /Users/tal/RiderProjects/QFetcher/QFetcher.Api/Controllers/FetchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at QFetcher.Services.Readers.ImageQuestionReader.ParseResult(String result) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/Readers/ImageQuestionReader.cs:line 47
+   at QFetcher.Services.Readers.ImageQuestionReader.ReadFromSource(String url) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/Readers/ImageQuestionReader.cs:line 35
+   at QFetcher.Services.QuestionAggregator.<>c__DisplayClass3_0.<GetAll>b__0(String sourceUrl) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/QuestionAggregator.cs:line 32
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass33_0`2.<ForEachWorker>b__0(Int32 i)
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`1.<ForWorker>b__1(RangeWorker& currentWorker, Int32 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`1.<ForWorker>b__1(RangeWorker& currentWorker, Int32 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica`1.ExecuteAction(Boolean& yieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()<---
+
+2018-11-24 14:18:12.2026|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 6713.5184ms 500 text/html; charset=utf-8 
+2018-11-24 14:19:57.1307||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/tal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2018-11-24 14:20:01.8531|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:5000/api/fetch   
+2018-11-24 14:20:01.9770|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 14:20:01.9915|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) - Validation state: Valid 
+2018-11-24 14:20:05.7807|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 3786.2728ms. 
+2018-11-24 14:20:05.7871|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[QFetcher.Models.Question, QFetcher.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2018-11-24 14:20:05.8000|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 3818.9967ms 
+2018-11-24 14:20:05.8048|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 3951.8802ms 200 application/json; charset=utf-8 
+2018-11-24 14:25:45.3844|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET https://localhost:5001/   
+2018-11-24 14:25:45.3891|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 4.7205ms 404  
+2018-11-24 14:25:46.6477||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using '/Users/tal/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest. 
+2018-11-24 14:25:54.1308|1|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request starting HTTP/1.1 GET http://localhost:4000/api/fetch   
+2018-11-24 14:25:54.2480|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Route matched with {action = "GetAll", controller = "Fetch"}. Executing action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) 
+2018-11-24 14:25:54.2595|1|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executing action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) - Validation state: Valid 
+2018-11-24 14:25:59.2361|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action method QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 4972.6397ms. 
+2018-11-24 14:25:59.2537|1|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[QFetcher.Models.Question, QFetcher.Models, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2018-11-24 14:25:59.2756|2|INFO|Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker|Executed action QFetcher.Api.Controllers.FetchController.GetAll (QFetcher.Api) in 5023.7146ms 
+2018-11-24 14:25:59.2807|2|INFO|Microsoft.AspNetCore.Hosting.Internal.WebHost|Request finished in 5149.8256ms 200 application/json; charset=utf-8 

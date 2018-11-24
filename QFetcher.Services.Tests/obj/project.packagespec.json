@@ -1,0 +1,59 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/tal/RiderProjects/QFetcher/QFetcher.Services.Tests/QFetcher.Services.Tests.csproj",
+    "projectName": "QFetcher.Services.Tests",
+    "projectPath": "/Users/tal/RiderProjects/QFetcher/QFetcher.Services.Tests/QFetcher.Services.Tests.csproj",
+    "outputPath": "/Users/tal/RiderProjects/QFetcher/QFetcher.Services.Tests/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "/Users/tal/RiderProjects/QFetcher/QFetcher.Services/QFetcher.Services.csproj": {
+            "projectPath": "/Users/tal/RiderProjects/QFetcher/QFetcher.Services/QFetcher.Services.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "Moq": {
+          "target": "Package",
+          "version": "[4.10.0, )"
+        },
+        "xunit": {
+          "target": "Package",
+          "version": "[2.4.1, )"
+        },
+        "xunit.runner.visualstudio": {
+          "target": "Package",
+          "version": "[2.4.1, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

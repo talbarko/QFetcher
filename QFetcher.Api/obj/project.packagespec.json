@@ -1,0 +1,65 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/tal/RiderProjects/QFetcher/QFetcher.Api/QFetcher.Api.csproj",
+    "projectName": "QFetcher.Api",
+    "projectPath": "/Users/tal/RiderProjects/QFetcher/QFetcher.Api/QFetcher.Api.csproj",
+    "outputPath": "/Users/tal/RiderProjects/QFetcher/QFetcher.Api/obj/",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netcoreapp2.1"
+    ],
+    "frameworks": {
+      "netcoreapp2.1": {
+        "projectReferences": {
+          "/Users/tal/RiderProjects/QFetcher/QFetcher.Models/QFetcher.Models.csproj": {
+            "projectPath": "/Users/tal/RiderProjects/QFetcher/QFetcher.Models/QFetcher.Models.csproj"
+          },
+          "/Users/tal/RiderProjects/QFetcher/QFetcher.Services/QFetcher.Services.csproj": {
+            "projectPath": "/Users/tal/RiderProjects/QFetcher/QFetcher.Services/QFetcher.Services.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.1": {
+      "dependencies": {
+        "Microsoft.AspNetCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.1, )",
+          "autoReferenced": true
+        },
+        "Microsoft.AspNetCore.Razor.Design": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.2, )"
+        },
+        "Microsoft.NETCore.App": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.1.0, )",
+          "autoReferenced": true
+        },
+        "NLog.Web.AspNetCore": {
+          "target": "Package",
+          "version": "[4.7.0, )"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}

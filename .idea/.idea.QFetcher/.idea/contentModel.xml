@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.reporters.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.utility.netcoreapp10.dll" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xunit.runner.visualstudio/2.4.1/build/netcoreapp1.0/xunit.runner.visualstudio.dotnetcore.testadapter.dll" t="Include" />
+    <e p="$USER_HOME$/Library/Caches/Rider2018.1/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_QFetcher.-696791704.00" t="ExcludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="QFetcher.Api" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="FetchController.cs" t="Include" />
+        </e>
+        <e p="manifest.dat" t="Include" />
+        <e p="nlog.config" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="QFetcher.Api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="QFetcher.Api.csproj" t="IncludeRecursive" />
+        <e p="Startup.cs" t="Include" />
+        <e p="wwwroot" t="Include" />
+      </e>
+      <e p="QFetcher.Models" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="ConcurrentBagExtention.cs" t="Include" />
+        <e p="JsonReaderInput" t="Include">
+          <e p="InputQuestion.cs" t="Include" />
+          <e p="InputQuestionsWrapper.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="QFetcher.Models.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="QFetcher.Models.csproj" t="IncludeRecursive" />
+        <e p="Question.cs" t="Include" />
+      </e>
+      <e p="QFetcher.Services" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="FileManager.cs" t="Include" />
+        <e p="IFileManager.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="QFetcher.Services.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="QFetcher.Services.csproj" t="IncludeRecursive" />
+        <e p="QuestionAggregator.cs" t="Include" />
+        <e p="Readers" t="Include">
+          <e p="CsvQuestionsReader.cs" t="Include" />
+          <e p="ImageQuestionReader.cs" t="Include" />
+          <e p="IQuestionsReader.cs" t="Include" />
+          <e p="IReadersFactory.cs" t="Include" />
+          <e p="JsonQuestionsReader.cs" t="Include" />
+          <e p="ReadersFactory.cs" t="Include" />
+        </e>
+      </e>
+      <e p="QFetcher.Services.Tests" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="QFetcher.Services.Tests.AssemblyInfo.cs" t="Include" />
+              <e p="QFetcher.Services.Tests.Program.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="QFetcher.Services.Tests.csproj" t="IncludeRecursive" />
+        <e p="QuestionsAggregatorTests.cs" t="Include" />
+        <e p="TestUtil.cs" t="Include" />
+      </e>
+      <e p="QFetcher.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

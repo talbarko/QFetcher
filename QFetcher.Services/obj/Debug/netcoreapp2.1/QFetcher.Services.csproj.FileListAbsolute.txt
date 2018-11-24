@@ -1,0 +1,14 @@
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/bin/Debug/netcoreapp2.1/QFetcher.Services.deps.json
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/bin/Debug/netcoreapp2.1/QFetcher.Services.dll
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/bin/Debug/netcoreapp2.1/QFetcher.Services.pdb
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/bin/Debug/netcoreapp2.1/QFetcher.Models.dll
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/bin/Debug/netcoreapp2.1/QFetcher.Models.pdb
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/obj/Debug/netcoreapp2.1/QFetcher.Services.csprojAssemblyReference.cache
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/obj/Debug/netcoreapp2.1/QFetcher.Services.csproj.CoreCompileInputs.cache
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/obj/Debug/netcoreapp2.1/QFetcher.Services.AssemblyInfoInputs.cache
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/obj/Debug/netcoreapp2.1/QFetcher.Services.AssemblyInfo.cs
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/obj/Debug/netcoreapp2.1/QFetcher.Services.csproj.CopyComplete
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/obj/Debug/netcoreapp2.1/QFetcher.Services.dll
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/obj/Debug/netcoreapp2.1/QFetcher.Services.pdb
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/bin/Debug/netcoreapp2.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/tal/RiderProjects/QFetcher/QFetcher.Services/bin/Debug/netcoreapp2.1/Microsoft.Extensions.Logging.Abstractions.xml

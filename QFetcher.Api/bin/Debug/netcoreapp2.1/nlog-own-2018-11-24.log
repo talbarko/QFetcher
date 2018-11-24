@@ -1,0 +1,67 @@
+2018-11-24 13:53:11.2673|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/fetch|action: 
+2018-11-24 13:53:11.4458|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'NLog.ILogger' while attempting to activate 'QFetcher.Api.Controllers.FetchController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)|url: http://localhost/api/fetch|action: GetAll
+2018-11-24 13:57:03.1351|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/fetch|action: 
+2018-11-24 13:57:03.2863||DEBUG|QFetcher.Api.Controllers.FetchController|getting all questions |url: http://localhost/api/fetch|action: GetAll
+2018-11-24 14:07:01.1337|3|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. |url: http://localhost/api/fetch|action: 
+2018-11-24 14:18:12.0812||ERROR|QFetcher.Services.Readers.IQuestionsReader|Error while trying to read image: https://s3.amazonaws.com/chegg-candidate-task/qsnapshot.png, Message Object reference not set to an instance of an object. |url: https://localhost/api/fetch|action: GetAll
+2018-11-24 14:18:12.0886||ERROR|QFetcher.Api.Controllers.FetchController|Error while Fetching questions: One or more errors occurred. (Object reference not set to an instance of an object.) |url: https://localhost/api/fetch|action: GetAll
+2018-11-24 14:18:12.1241|1|ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.AggregateException: One or more errors occurred. (Object reference not set to an instance of an object.) ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at QFetcher.Services.Readers.ImageQuestionReader.ParseResult(String result) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/Readers/ImageQuestionReader.cs:line 47
+   at QFetcher.Services.Readers.ImageQuestionReader.ReadFromSource(String url) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/Readers/ImageQuestionReader.cs:line 35
+   at QFetcher.Services.QuestionAggregator.<>c__DisplayClass3_0.<GetAll>b__0(String sourceUrl) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/QuestionAggregator.cs:line 32
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass33_0`2.<ForEachWorker>b__0(Int32 i)
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`1.<ForWorker>b__1(RangeWorker& currentWorker, Int32 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`1.<ForWorker>b__1(RangeWorker& currentWorker, Int32 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica`1.ExecuteAction(Boolean& yieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Parallel.ThrowSingleCancellationExceptionOrOtherException(ICollection exceptions, CancellationToken cancelToken, Exception otherException)
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IList`1 list, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+   at QFetcher.Services.QuestionAggregator.GetAll(String path) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/QuestionAggregator.cs:line 27
+   at QFetcher.Api.Controllers.FetchController.GetAll() in /Users/tal/RiderProjects/QFetcher/QFetcher.Api/Controllers/FetchController.cs:line 28
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+---> (Inner Exception #0) System.NullReferenceException: Object reference not set to an instance of an object.
+   at QFetcher.Services.Readers.ImageQuestionReader.ParseResult(String result) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/Readers/ImageQuestionReader.cs:line 47
+   at QFetcher.Services.Readers.ImageQuestionReader.ReadFromSource(String url) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/Readers/ImageQuestionReader.cs:line 35
+   at QFetcher.Services.QuestionAggregator.<>c__DisplayClass3_0.<GetAll>b__0(String sourceUrl) in /Users/tal/RiderProjects/QFetcher/QFetcher.Services/QuestionAggregator.cs:line 32
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass33_0`2.<ForEachWorker>b__0(Int32 i)
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`1.<ForWorker>b__1(RangeWorker& currentWorker, Int32 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Parallel.<>c__DisplayClass19_0`1.<ForWorker>b__1(RangeWorker& currentWorker, Int32 timeout, Boolean& replicationDelegateYieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica`1.ExecuteAction(Boolean& yieldedBeforeCompletion)
+   at System.Threading.Tasks.TaskReplicator.Replica.Execute()<---
+|url: https://localhost/api/fetch|action: GetAll
